@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		99F3396B2CBF226300A46EAA /* SwinjectSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3396A2CBF226300A46EAA /* SwinjectSampleApp.swift */; };
-		99F3396D2CBF226300A46EAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3396C2CBF226300A46EAA /* ContentView.swift */; };
 		99F3396F2CBF226600A46EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F3396E2CBF226600A46EAA /* Assets.xcassets */; };
 		99F339722CBF226600A46EAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F339712CBF226600A46EAA /* Preview Assets.xcassets */; };
-		99F3397C2CBF226600A46EAA /* SwinjectSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3397B2CBF226600A46EAA /* SwinjectSampleTests.swift */; };
 		99F339862CBF226600A46EAA /* SwinjectSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339852CBF226600A46EAA /* SwinjectSampleUITests.swift */; };
 		99F339882CBF226600A46EAA /* SwinjectSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339872CBF226600A46EAA /* SwinjectSampleUITestsLaunchTests.swift */; };
+		99F339982CBF252400A46EAA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339972CBF252400A46EAA /* Models.swift */; };
+		99F3399A2CBF258C00A46EAA /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339992CBF258C00A46EAA /* DIContainer.swift */; };
+		99F3399D2CBF25FB00A46EAA /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 99F3399C2CBF25FB00A46EAA /* Swinject */; };
+		99F3399F2CBF268800A46EAA /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3399E2CBF268800A46EAA /* MainListView.swift */; };
+		99F339A12CBF26BC00A46EAA /* MainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339A02CBF26BC00A46EAA /* MainListViewModel.swift */; };
+		99F339A32CBF26F100A46EAA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339A22CBF26F100A46EAA /* NetworkService.swift */; };
+		99F339A52CBF271C00A46EAA /* CountryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339A42CBF271C00A46EAA /* CountryRepository.swift */; };
+		99F339A72CBF282400A46EAA /* NetworkServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339A62CBF282400A46EAA /* NetworkServiceSpy.swift */; };
+		99F339A92CBF289A00A46EAA /* CountryRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339A82CBF289A00A46EAA /* CountryRepositorySpy.swift */; };
+		99F339AB2CBF28D700A46EAA /* TestDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339AA2CBF28D600A46EAA /* TestDIContainer.swift */; };
+		99F339AD2CBF292700A46EAA /* MainListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339AC2CBF292700A46EAA /* MainListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +45,22 @@
 /* Begin PBXFileReference section */
 		99F339672CBF226300A46EAA /* SwinjectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwinjectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F3396A2CBF226300A46EAA /* SwinjectSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectSampleApp.swift; sourceTree = "<group>"; };
-		99F3396C2CBF226300A46EAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99F3396E2CBF226600A46EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99F339712CBF226600A46EAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		99F339772CBF226600A46EAA /* SwinjectSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		99F3397B2CBF226600A46EAA /* SwinjectSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectSampleTests.swift; sourceTree = "<group>"; };
 		99F339812CBF226600A46EAA /* SwinjectSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F339852CBF226600A46EAA /* SwinjectSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectSampleUITests.swift; sourceTree = "<group>"; };
 		99F339872CBF226600A46EAA /* SwinjectSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99F339972CBF252400A46EAA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		99F339992CBF258C00A46EAA /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		99F3399E2CBF268800A46EAA /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		99F339A02CBF26BC00A46EAA /* MainListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewModel.swift; sourceTree = "<group>"; };
+		99F339A22CBF26F100A46EAA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		99F339A42CBF271C00A46EAA /* CountryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRepository.swift; sourceTree = "<group>"; };
+		99F339A62CBF282400A46EAA /* NetworkServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceSpy.swift; sourceTree = "<group>"; };
+		99F339A82CBF289A00A46EAA /* CountryRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRepositorySpy.swift; sourceTree = "<group>"; };
+		99F339AA2CBF28D600A46EAA /* TestDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDIContainer.swift; sourceTree = "<group>"; };
+		99F339AC2CBF292700A46EAA /* MainListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F3399D2CBF25FB00A46EAA /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +89,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99C6FCB12CBF9700004FB7F8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				99F3396A2CBF226300A46EAA /* SwinjectSampleApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		99C6FCB22CBF9718004FB7F8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				99F339972CBF252400A46EAA /* Models.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		99C6FCB32CBF971F004FB7F8 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				99F339A22CBF26F100A46EAA /* NetworkService.swift */,
+				99F339A42CBF271C00A46EAA /* CountryRepository.swift */,
+				99F339992CBF258C00A46EAA /* DIContainer.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		99C6FCB42CBF972C004FB7F8 /* Presentatiton */ = {
+			isa = PBXGroup;
+			children = (
+				99F3399E2CBF268800A46EAA /* MainListView.swift */,
+				99F339A02CBF26BC00A46EAA /* MainListViewModel.swift */,
+			);
+			path = Presentatiton;
+			sourceTree = "<group>";
+		};
+		99C6FCB52CBF9851004FB7F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99F3396E2CBF226600A46EAA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		99C6FCB62CBF9875004FB7F8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				99F339A62CBF282400A46EAA /* NetworkServiceSpy.swift */,
+				99F339A82CBF289A00A46EAA /* CountryRepositorySpy.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		99C6FCB72CBF989B004FB7F8 /* Infractrusture */ = {
+			isa = PBXGroup;
+			children = (
+				99F339AA2CBF28D600A46EAA /* TestDIContainer.swift */,
+			);
+			path = Infractrusture;
+			sourceTree = "<group>";
+		};
+		99C6FCB82CBF98B6004FB7F8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				99F339AC2CBF292700A46EAA /* MainListViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		99F3395E2CBF226300A46EAA = {
 			isa = PBXGroup;
 			children = (
@@ -94,10 +180,12 @@
 		99F339692CBF226300A46EAA /* SwinjectSample */ = {
 			isa = PBXGroup;
 			children = (
-				99F3396A2CBF226300A46EAA /* SwinjectSampleApp.swift */,
-				99F3396C2CBF226300A46EAA /* ContentView.swift */,
-				99F3396E2CBF226600A46EAA /* Assets.xcassets */,
+				99C6FCB12CBF9700004FB7F8 /* Application */,
+				99C6FCB22CBF9718004FB7F8 /* Domain */,
+				99C6FCB32CBF971F004FB7F8 /* Infrastructure */,
+				99C6FCB42CBF972C004FB7F8 /* Presentatiton */,
 				99F339702CBF226600A46EAA /* Preview Content */,
+				99C6FCB52CBF9851004FB7F8 /* Resources */,
 			);
 			path = SwinjectSample;
 			sourceTree = "<group>";
@@ -113,7 +201,9 @@
 		99F3397A2CBF226600A46EAA /* SwinjectSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				99F3397B2CBF226600A46EAA /* SwinjectSampleTests.swift */,
+				99C6FCB72CBF989B004FB7F8 /* Infractrusture */,
+				99C6FCB82CBF98B6004FB7F8 /* Presentation */,
+				99C6FCB62CBF9875004FB7F8 /* Mocks */,
 			);
 			path = SwinjectSampleTests;
 			sourceTree = "<group>";
@@ -143,6 +233,9 @@
 			dependencies = (
 			);
 			name = SwinjectSample;
+			packageProductDependencies = (
+				99F3399C2CBF25FB00A46EAA /* Swinject */,
+			);
 			productName = SwinjectSample;
 			productReference = 99F339672CBF226300A46EAA /* SwinjectSample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +308,9 @@
 				Base,
 			);
 			mainGroup = 99F3395E2CBF226300A46EAA;
+			packageReferences = (
+				99F3399B2CBF25FB00A46EAA /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 99F339682CBF226300A46EAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +353,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F3396D2CBF226300A46EAA /* ContentView.swift in Sources */,
+				99F3399F2CBF268800A46EAA /* MainListView.swift in Sources */,
+				99F339A12CBF26BC00A46EAA /* MainListViewModel.swift in Sources */,
+				99F3399A2CBF258C00A46EAA /* DIContainer.swift in Sources */,
+				99F339982CBF252400A46EAA /* Models.swift in Sources */,
 				99F3396B2CBF226300A46EAA /* SwinjectSampleApp.swift in Sources */,
+				99F339A52CBF271C00A46EAA /* CountryRepository.swift in Sources */,
+				99F339A32CBF26F100A46EAA /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +367,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F3397C2CBF226600A46EAA /* SwinjectSampleTests.swift in Sources */,
+				99F339AB2CBF28D700A46EAA /* TestDIContainer.swift in Sources */,
+				99F339AD2CBF292700A46EAA /* MainListViewModelTests.swift in Sources */,
+				99F339A92CBF289A00A46EAA /* CountryRepositorySpy.swift in Sources */,
+				99F339A72CBF282400A46EAA /* NetworkServiceSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +538,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inmabara.SwinjectSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -463,7 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inmabara.SwinjectSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -588,6 +692,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99F3399B2CBF25FB00A46EAA /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99F3399C2CBF25FB00A46EAA /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99F3399B2CBF25FB00A46EAA /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99F3395F2CBF226300A46EAA /* Project object */;
 }
