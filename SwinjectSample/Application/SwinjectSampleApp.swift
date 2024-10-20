@@ -12,8 +12,8 @@ struct SwinjectSampleApp: App {
     var body: some Scene {
         WindowGroup {
             // Resolver las dependencias desde el contenedor
-            let countryRepository = DIContainer.shared.countryRepository
-            let networkService = DIContainer.shared.networkService
+            let countryRepository = DIContainerProvider.shared.countryRepository
+            let networkService = DIContainerProvider.shared.networkService
             
             // Crear el ViewModel manualmente
             let mainListViewModel = MainListViewModel(countryRepository: countryRepository, networkService: networkService)

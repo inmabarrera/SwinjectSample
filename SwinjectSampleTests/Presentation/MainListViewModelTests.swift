@@ -8,7 +8,7 @@
 import XCTest
 @testable import SwinjectSample
 
-class MainListViewModelTestsv: XCTestCase {
+class MainListViewModelTests: BaseTestCase {
     
     var viewModel: MainListViewModel!
     var networkServiceSpy: NetworkServiceSpy!
@@ -18,8 +18,10 @@ class MainListViewModelTestsv: XCTestCase {
         super.setUp()
         
         // Retrieve the mocks from the test container
-        networkServiceSpy = TestDIContainer.shared.networkService
-        countryRepositorySpy = TestDIContainer.shared.countryRepository
+        networkServiceSpy = DIContainerProvider.shared.networkService as!
+                                    NetworkServiceSpy
+        countryRepositorySpy = DIContainerProvider.shared.countryRepository as!
+                                    CountryRepositorySpy
         
         // Inject the mocks into the ViewModel
         viewModel = MainListViewModel(countryRepository: countryRepositorySpy,

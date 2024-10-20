@@ -7,7 +7,11 @@
 
 import Foundation
 
-class CountryRepository {
+protocol CountryRepositoryProtocol {
+    func fetchCountries(completion: @escaping (Result<[Country], Error>) -> Void)
+}
+
+class CountryRepository: CountryRepositoryProtocol {
     private let networkService: NetworkService
 
     init(networkService: NetworkService) {

@@ -12,10 +12,10 @@ class MainListViewModel: ObservableObject {
     @Published var posts: [Post] = []
     @Published var errorMessage: String?
 
-    private let countryRepository: CountryRepository
+    private let countryRepository: CountryRepositoryProtocol
     private let networkService: NetworkService
 
-    init(countryRepository: CountryRepository, networkService: NetworkService) {
+    init(countryRepository: CountryRepositoryProtocol, networkService: NetworkService) {
         self.countryRepository = countryRepository
         self.networkService = networkService
     }

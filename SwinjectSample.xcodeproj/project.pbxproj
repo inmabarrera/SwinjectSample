@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99F2DE2B2CC5A5BC003288DF /* DIContainerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F2DE2A2CC5A5BC003288DF /* DIContainerProvider.swift */; };
+		99F2DE2D2CC5A88C003288DF /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F2DE2C2CC5A88C003288DF /* BaseTest.swift */; };
 		99F3396B2CBF226300A46EAA /* SwinjectSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3396A2CBF226300A46EAA /* SwinjectSampleApp.swift */; };
 		99F3396F2CBF226600A46EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F3396E2CBF226600A46EAA /* Assets.xcassets */; };
 		99F339722CBF226600A46EAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F339712CBF226600A46EAA /* Preview Assets.xcassets */; };
@@ -21,7 +23,7 @@
 		99F339A52CBF271C00A46EAA /* CountryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339A42CBF271C00A46EAA /* CountryRepository.swift */; };
 		99F339A72CBF282400A46EAA /* NetworkServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339A62CBF282400A46EAA /* NetworkServiceSpy.swift */; };
 		99F339A92CBF289A00A46EAA /* CountryRepositorySpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339A82CBF289A00A46EAA /* CountryRepositorySpy.swift */; };
-		99F339AB2CBF28D700A46EAA /* TestDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339AA2CBF28D600A46EAA /* TestDIContainer.swift */; };
+		99F339AB2CBF28D700A46EAA /* TestsDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339AA2CBF28D600A46EAA /* TestsDIContainer.swift */; };
 		99F339AD2CBF292700A46EAA /* MainListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F339AC2CBF292700A46EAA /* MainListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99F2DE2A2CC5A5BC003288DF /* DIContainerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerProvider.swift; sourceTree = "<group>"; };
+		99F2DE2C2CC5A88C003288DF /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		99F339672CBF226300A46EAA /* SwinjectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwinjectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F3396A2CBF226300A46EAA /* SwinjectSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectSampleApp.swift; sourceTree = "<group>"; };
 		99F3396E2CBF226600A46EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +63,7 @@
 		99F339A42CBF271C00A46EAA /* CountryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRepository.swift; sourceTree = "<group>"; };
 		99F339A62CBF282400A46EAA /* NetworkServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceSpy.swift; sourceTree = "<group>"; };
 		99F339A82CBF289A00A46EAA /* CountryRepositorySpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRepositorySpy.swift; sourceTree = "<group>"; };
-		99F339AA2CBF28D600A46EAA /* TestDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDIContainer.swift; sourceTree = "<group>"; };
+		99F339AA2CBF28D600A46EAA /* TestsDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsDIContainer.swift; sourceTree = "<group>"; };
 		99F339AC2CBF292700A46EAA /* MainListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,9 +112,9 @@
 		99C6FCB32CBF971F004FB7F8 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				99F2DE292CC5A566003288DF /* DI */,
 				99F339A22CBF26F100A46EAA /* NetworkService.swift */,
 				99F339A42CBF271C00A46EAA /* CountryRepository.swift */,
-				99F339992CBF258C00A46EAA /* DIContainer.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -141,12 +145,12 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		99C6FCB72CBF989B004FB7F8 /* Infractrusture */ = {
+		99C6FCB72CBF989B004FB7F8 /* Infractruture */ = {
 			isa = PBXGroup;
 			children = (
-				99F339AA2CBF28D600A46EAA /* TestDIContainer.swift */,
+				99F339AA2CBF28D600A46EAA /* TestsDIContainer.swift */,
 			);
-			path = Infractrusture;
+			path = Infractruture;
 			sourceTree = "<group>";
 		};
 		99C6FCB82CBF98B6004FB7F8 /* Presentation */ = {
@@ -155,6 +159,15 @@
 				99F339AC2CBF292700A46EAA /* MainListViewModelTests.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		99F2DE292CC5A566003288DF /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				99F339992CBF258C00A46EAA /* DIContainer.swift */,
+				99F2DE2A2CC5A5BC003288DF /* DIContainerProvider.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		99F3395E2CBF226300A46EAA = {
@@ -201,7 +214,8 @@
 		99F3397A2CBF226600A46EAA /* SwinjectSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				99C6FCB72CBF989B004FB7F8 /* Infractrusture */,
+				99F2DE2C2CC5A88C003288DF /* BaseTest.swift */,
+				99C6FCB72CBF989B004FB7F8 /* Infractruture */,
 				99C6FCB82CBF98B6004FB7F8 /* Presentation */,
 				99C6FCB62CBF9875004FB7F8 /* Mocks */,
 			);
@@ -360,6 +374,7 @@
 				99F3396B2CBF226300A46EAA /* SwinjectSampleApp.swift in Sources */,
 				99F339A52CBF271C00A46EAA /* CountryRepository.swift in Sources */,
 				99F339A32CBF26F100A46EAA /* NetworkService.swift in Sources */,
+				99F2DE2B2CC5A5BC003288DF /* DIContainerProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F339AB2CBF28D700A46EAA /* TestDIContainer.swift in Sources */,
+				99F2DE2D2CC5A88C003288DF /* BaseTest.swift in Sources */,
+				99F339AB2CBF28D700A46EAA /* TestsDIContainer.swift in Sources */,
 				99F339AD2CBF292700A46EAA /* MainListViewModelTests.swift in Sources */,
 				99F339A92CBF289A00A46EAA /* CountryRepositorySpy.swift in Sources */,
 				99F339A72CBF282400A46EAA /* NetworkServiceSpy.swift in Sources */,

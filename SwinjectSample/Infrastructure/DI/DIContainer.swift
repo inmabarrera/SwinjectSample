@@ -7,8 +7,8 @@
 
 import Foundation
 import Swinject
-//
-class DIContainer {
+
+class DIContainer: DIContainerProtocol {
 
     // MARK: - Singleton
     static let shared = DIContainer()
@@ -31,7 +31,7 @@ class DIContainer {
     }
 
     // MARK: - Repositories
-    var countryRepository: CountryRepository {
+    var countryRepository: CountryRepositoryProtocol {
         guard let repository = container.resolve(CountryRepository.self) else {
             fatalError("CountryRepository is not registered in the container.")
         }
@@ -40,7 +40,7 @@ class DIContainer {
 
     // MARK: - Register Assemblies
     private func registerAssemblies() {
-        let assembler = Assembler([
+        _ = Assembler([
             ManagerAssembly(),
             RepositoryAssembly()
         ], container: container)

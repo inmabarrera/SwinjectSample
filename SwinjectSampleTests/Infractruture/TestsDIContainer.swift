@@ -1,5 +1,5 @@
 //
-//  TestDIContainer.swift
+//  TestsDIContainer.swift
 //  SwinjectSampleTests
 //
 //  Created by Inma on 16/10/24.
@@ -9,8 +9,9 @@ import XCTest
 @testable import SwinjectSample
 import Swinject
 
-class TestDIContainer {
-    static let shared = TestDIContainer()
+class TestsDIContainer: DIContainerProtocol {
+    
+    static let shared = TestsDIContainer()
 
     private let container: Container
 
@@ -32,11 +33,11 @@ class TestDIContainer {
     }
 
     // MARK: - Resolve Mocks
-    var networkService: NetworkServiceSpy {
+    var networkService: NetworkService {
         return container.resolve(NetworkService.self) as! NetworkServiceSpy
     }
 
-    var countryRepository: CountryRepositorySpy {
+    var countryRepository: CountryRepositoryProtocol {
         return container.resolve(CountryRepository.self) as! CountryRepositorySpy
     }
 }
